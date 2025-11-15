@@ -1,0 +1,8 @@
+- Crea una aplicación que use Python
+- Esa aplicación debe de leer un fichero especificado por la opción -i ( o --input)  (o la entrada estándar si no esta) que debe ser formato el cabrillo
+- El fichero leído debe de escribirse en la salida estándar o en el fichero espcificado por la opción -o  (o --output) transformado en formato adif (Amateur Data Interchange Format) 
+- Es necesario parsear los campos CALLSIGN, GRID-LOCATOR, NAME y CONTEST si existe
+- En caso de que una línea de log sea errónea se debe de imprimir por la salida de error estándar (que no por lo salida estándar ) indicando el número de línea de fichero cabrillo que es erróneo y la línea erronea
+- Cualquier línea debe de suprimirse espacios al principio y al final
+- El parseo del QSO debe de hacerse con una expresión regular asignando cada valor a un campo de captura. 
+- La expresión regular debe ser precompilada, no crearse el match en cada pasada del bucle
